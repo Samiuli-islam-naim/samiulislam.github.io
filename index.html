@@ -1,106 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Samiul Islam Naim - SEO Expert and Digital Marketer. Contact me for SEO, Digital Marketing, and Web Solutions.">
-    <meta name="keywords" content="SEO Expert, Digital Marketing, Website SEO, Online Marketing, Samiul Islam Naim">
-    <meta name="author" content="Samiul Islam Naim">
-    <title>Samiul Islam Naim | SEO Expert & Digital Marketer</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        header {
-            background-color: #007BFF;
-            color: white;
-            width: 100%;
-            padding: 30px 0;
-            text-align: center;
-        }
-        header img {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            border: 4px solid white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            margin-bottom: 15px;
-            object-fit: cover;
-        }
-        main {
-            max-width: 800px;
-            width: 90%;
-            margin: 20px auto;
-            background-color: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        main h1, main h2 {
-            margin-bottom: 15px;
-        }
-        .contact-info {
-            margin-top: 20px;
-        }
-        .contact-info p {
-            margin: 8px 0;
-            font-weight: bold;
-        }
-        .social-links {
-            margin-top: 20px;
-        }
-        .social-links a {
-            text-decoration: none;
-            margin: 0 12px;
-            font-size: 24px;
-            color: #007BFF;
-        }
-        .social-links a:hover {
-            color: #0056b3;
-        }
-        footer {
-            margin-top: 40px;
-            padding: 15px;
-            background-color: #007BFF;
-            color: white;
-            width: 100%;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO META -->
+  <title>Samiul Islam Naim | SEO Expert & Digital Marketer in Rangpur</title>
+  <meta name="description" content="Samiul Islam Naim is a professional SEO Expert and Digital Marketer from Pirganj, Rangpur. Helping businesses rank higher and grow online." />
+  <meta name="keywords" content="SEO Expert in Rangpur, Digital Marketer Bangladesh, Local SEO Expert, Samiul Islam Naim" />
+  <meta name="author" content="Samiul Islam Naim" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Samiul Islam Naim - SEO Expert & Digital Marketer" />
+  <meta property="og:description" content="Professional SEO & Digital Marketing services in Bangladesh." />
+  <meta property="og:image" content="samiul.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #020617, #0f172a);
+    }
+
+    .hero {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .hero img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      margin-bottom: 20px;
+      object-fit: cover;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #38bdf8;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin: 10px 0 20px;
+      color: #cbd5f5;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      color: #0f172a;
+      background: #38bdf8;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: #0ea5e9;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #38bdf8;
+    }
+
+    .about, .services, .contact {
+      animation: slideUp 1s ease forwards;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 25px;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(56,189,248,0.2);
+    }
+
+    .contact a {
+      display: block;
+      margin: 10px 0;
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 1.05rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <!-- Make sure samiul.jpg is in the same folder as index.html -->
-        <img src="samiul.jpg" alt="Samiul Islam Naim">
-        <h1>Samiul Islam Naim</h1>
-        <h2>SEO Expert & Digital Marketer</h2>
-    </header>
 
-    <main>
-        <h2>Welcome to My Website</h2>
-        <p>I am Samiul Islam Naim, an experienced SEO Expert and Digital Marketer. I help businesses grow online with effective SEO strategies and digital marketing solutions.</p>
+<header>
+  <div class="hero">
+    <img src="samiul.jpg" alt="Samiul Islam Naim SEO Expert">
+    <h1>Samiul Islam Naim</h1>
+    <h2>SEO Expert & Digital Marketer</h2>
 
-        <div class="contact-info">
-            <p>📞 Phone: 01722020484</p>
-            <p>✉️ Email: <a href="mailto:naim7423388@gmail.com">naim7423388@gmail.com</a></p>
-        </div>
+    <a class="btn" href="tel:01722020484">📞 Call Now</a>
+    <a class="btn" href="mailto:ni7423388@gmail.com">📧 Email Me</a>
+  </div>
+</header>
 
-        <div class="social-links">
-            <a href="https://www.facebook.com/" target="_blank">📘 Facebook</a>
-            <a href="https://www.linkedin.com/" target="_blank">💼 LinkedIn</a>
-            <a href="https://www.instagram.com/" target="_blank">📸 Instagram</a>
-        </div>
-    </main>
+<section class="about">
+  <h2 class="section-title">About Me</h2>
+  <p>
+    I am <strong>Samiul Islam Naim</strong>, a professional <strong>SEO Expert and Digital Marketer</strong>
+    based in <strong>Pirganj, Rangpur</strong>. I help businesses grow online through
+    Local SEO, Google ranking strategies, and conversion-focused digital marketing.
+  </p>
+</section>
 
-    <footer>
-        &copy; 2025 Samiul Islam Naim. All rights reserved.
-    </footer>
+<section class="services">
+  <h2 class="section-title">My Services</h2>
+
+  <div class="services-grid">
+    <div class="card">🔍 Local SEO Optimization</div>
+    <div class="card">📈 Google Ranking & Keyword Research</div>
+    <div class="card">📝 SEO Friendly Content Strategy</div>
+    <div class="card">🔗 On-Page & Technical SEO</div>
+    <div class="card">📊 Website Audit & Performance Fix</div>
+    <div class="card">📣 Digital Marketing Consulting</div>
+  </div>
+</section>
+
+<section class="contact">
+  <h2 class="section-title">Contact Me</h2>
+
+  <a href="tel:01722020484">📞 Phone: 01722020484</a>
+  <a href="mailto:ni7423388@gmail.com">📧 Email: ni7423388@gmail.com</a>
+  <a href="https://www.facebook.com/share/p/1AHotaKzvd/" target="_blank">🌐 Facebook Profile</a>
+  <p>📍 Location: Pirganj, Rangpur, Bangladesh</p>
+</section>
+
+<footer>
+  © 2025 Samiul Islam Naim | SEO Expert & Digital Marketer
+</footer>
+
 </body>
 </html>
